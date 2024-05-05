@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Películas</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Enlaces para Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+          <img src="" alt=" logo de la marca">
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a herf="#">Inicio</a> </li>
+            <li><a herf="#">Reseñas</a> </li>
+            <li><a herf="#">Perfil</a> </li>
+          </ul>
+        </nav>
+        <a herf="#" class="btn"><button>Contacto</button></a>
+      </header>
+  
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <img src="theboysS.jpg" alt="Película 1">
+                <h3>The Boys</h3>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <img src="invincibleS.jpg" alt="Película 2">
+                <h3>Invencible</h3>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <img src="recherS.jpg" alt="Película 3">
+                <h3>Reacher</h3>
+            </div>
+            <!-- Agrega más slides según sea necesario -->
+        </div>
+        <!-- Controles de navegación -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Scripts para Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            // Configuraciones opcionales de Swiper
+            slidesPerView: 3, // Número de slides visibles en la pantalla
+            spaceBetween: 30, // Espacio entre slides
+            navigation: {
+                nextEl: '.swiper-button-next', // Botón para la siguiente slide
+                prevEl: '.swiper-button-prev', // Botón para la slide anterior
+            },
+        });
+    </script>
+</body>
+</html>
